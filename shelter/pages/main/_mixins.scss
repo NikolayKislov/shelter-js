@@ -1,0 +1,64 @@
+@mixin h2-title($font-size, $line-height, $color) {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $color;
+}
+@mixin button-primary($width, $height, $text-color, $color, $color-hover) {
+  display: block;
+  font-family: $font-title;
+  width: $width;
+  height: $height;
+  background: $color;
+  border-radius: 100px;
+  color: $text-color;
+  &:hover {
+    background: $color-hover;
+    transition: .3s;
+  }
+}
+@mixin button-regilar($width, $height, $text-color, $color) {
+  padding: 13px 41px;
+  width: $width;
+  height: $height;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  background-color: $color;
+  color: $text-color;
+  font-size: 17px;
+  font-family: $font-title;
+  line-height: 22.1px;
+  letter-spacing: 0.07em;
+}
+@mixin h3-title {
+  font-family: "Georgia";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $color-dark-l;
+}
+@mixin round-button {
+align-items: center;
+padding: 16px 16px;
+width: 52px;
+height: 52px;
+border: 2px solid $color-primary;
+box-sizing: border-box;
+border-radius: 50%;
+color: $color-dark-3xl;
+background-color: transparent;
+ &:hover{
+   background-color: $color-primary-light;
+   transition: .3s;
+   border: 2px solid $color-primary-light;
+ }
+ &.inactive{
+  border: 2px solid $color-dark-s;
+  color: $color-dark-s;
+ }
+}
