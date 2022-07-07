@@ -1,2 +1,1 @@
-# nikolaykislov-JSFE2022Q1
-Private repository for @nikolaykislov
+https://nikolaykislov.github.io/shelter-js/shelter/pages/main/index.html
